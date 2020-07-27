@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- REQUIRED META -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" shrink-to-fit="no">
+
+        <!-- REQUIRED CSS -->
+        
+        <link rel="Stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700&display=swap" rel="stylesheet">
+        <!-- popovers script -->
+        <script src="bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+        <style>
+            #myBtn {
+                display: none;
+                position: fixed;
+                bottom: 20px;
+                right: 30px;
+                z-index: 99;
+                font-size: 18px;
+                border: none;
+                outline: none;
+                color: white;
+                cursor: pointer;
+                padding: 15px;
+                border-radius: 30px;
+            }
+            
+        html {
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            padding: 20px 40px;
+            /* background: gray; */
+            width: 100%;
+
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: position 10s;
+            -ms-transition: position 10s;
+            -o-transition: position 10s;
+            transition: all 0.5s ease;
+        }
+
+        .fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            animation: smoothScroll 1s forwards;
+        }
+
+        @keyframes smoothScroll {
+            0% {
+                transform: translateY(-40px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+
+        </style>
+
+        <title>SHYALABS</title>
+    </head>
+
+<body>
+    <!-- Navbar starts -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top mobile-menu">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor03">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/Shya Tech Labs Final-01.jpg" width="30" height="30" class="d-inline-block align-top" alt=""></a>
+            <ul class="navbar-nav mr-auto justify-content-end">
+                    <li class="nav-item">
+                    <a class="nav-link active" href="index.html" style="color:#F05050">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#about" style="color:#F05050">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="work.html" style="color:#F05050">WORK WITH US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html" style="color:#F05050">PRODUCTS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="medical-form.html" style="color:#F05050">CONTACT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html" style="color:#F05050">BLOG</a>
+                    </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+      <strong>#COVID-19 </strong>Be INFORMED, Be PREPARED, Be SMART, Be SAFE
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+<!-- Navbar ends -->
+<a href="" onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/arrows.png" alt=""></a>
+<!-- slider -->
+<!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="..." class="d-block w-100" alt="...">
+      <div class="jumbotron jumbotron-fluid text-dark" id="jumb" >
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-5">
+              <img src="//" alt="slider1">
+            </div>
+            <div class="col-sm-7">
+              <p>At Shyalabs, it is not just our team of dedicated people but also everyone who seeks our service that join hands to build a stronger network, 
+                one that vows to shield us in times of need, and one that grows stronger in the face of the not-so-bright days.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+      <div class="jumbotron jumbotron-fluid  text-dark" id="jumb" >
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-5">
+              <img src="//" alt="slider2">
+            </div>
+            <div class="col-sm-7">
+              <p>While preparation, production  and propagation of everything beginning from the tiniest health equipments to surgical instruments, X-ray machines, scanners, drug production chains, medication right up to medical advice is currently dependent on technology,
+                we offer an unique solution to provide as many of these solutions possible from a single, cumulative platform.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+      <div class="jumbotron jumbotron-fluid  text-dark" id="jumb" >
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-5">
+              <img src="//" alt="slider3">
+            </div>
+            <div class="col-sm-7">
+              <p>Our goal is to not only connect the ones in search of help to the ones who can provide it to them but at the same time to ensure that we create a better world by stepping up and coming together to help each other. This is possible only when the right technology meets the right people.
+                This is possible only when compassion meets science, the scientific method meets vigour, and vigour meets kindness.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+      <div class="jumbotron jumbotron-fluid text-dark" id="jumb" >
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-5">
+              <img src="//" alt="slider4">
+            </div>
+            <div class="col-sm-7">
+              <p>The situational helplessness that humanity has faced upon being exposed to the COVID-19 pandemic has pointed out the immediate necessities to facilitate civilisation, and hence life itself on and within the heart of the planet. One of the first methods that can be opted for ensuring survival is boosting the healthcare system. Given the large number of seekers of life, and given the comparatively smaller number of experts who can provide them health service – 
+                technology could be the only mediator that would help bridge such an inevitable gap.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div> -->
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/1.jpg" alt="First slide">
+      <div class="carousel-caption">
+         
+        <p>At Shyalabs, it is not just our team of dedicated people but also everyone who seeks our service that join hands to build a stronger network, 
+          one that vows to shield us in times of need, and one that grows stronger in the face of the not-so-bright days.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/2.jpg" alt="Second slide">
+      <div class="carousel-caption">
+          
+        <p>While preparation, production  and propagation of everything beginning from the tiniest health equipments to surgical instruments, X-ray machines, scanners, drug production chains, medication right up to medical advice is currently dependent on technology,
+          we offer an unique solution to provide as many of these solutions possible from a single, cumulative platform.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/3.jpg" alt="Third slide">
+      <div class="carousel-caption">
+          
+        <p>Our goal is to not only connect the ones in search of help to the ones who can provide it to them but at the same time to ensure that we create a better world by stepping up and coming together to help each other. This is possible only when the right technology meets the right people.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/4.jpg" alt="Third slide">
+      <div class="carousel-caption">
+          
+        <p>The situational helplessness that humanity has faced upon being exposed to the COVID-19 pandemic has pointed out the immediate necessities to facilitate civilisation, and hence life itself on and within the heart of the planet. One of the first methods that can be opted for ensuring survival is boosting the healthcare system. Given the large number of seekers of life, and given the comparatively smaller number of experts who can provide them health service – 
+          technology could be the only mediator that would help bridge such an inevitable gap.</p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+        <!-- <section>
+            <h7>SHYA TECH LABS</h7>
+
+        <div class="video-container">
+            <video autoplay loop muted>
+                <source src="images/Microscope - 5445.mp4">
+            </video>
+        </div>
+        
+        </section> -->
+
+
+
+<br>
+<div class="container" id="about">
+    <div class="row">
+        <div class="col-lg-7" style="margin-top:60px">
+            <h1>ABOUT US</h1>
+            <p>"A healthcare IT Company which develops apps and software useful for the healthcare system it is developed by team of experienced Healthcare and IT professionals".</p><br>
+            <a href="medical-form.html" class="btn btn-outline-info">Book an appointment</a>
+            <!-- <a href="#">Button</a> -->
+            <!-- <button class="btn1">Button</button> -->
+        </div>
+        <div class="col-lg-5">
+            <img src="images/about us.jpg" alt="About">
+        </div>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-5">
+            <img src="images/vission.jpg" alt="Vission">
+        </div>
+        <div class="col-lg-7" style="margin-top:60px"> 
+            <h1>VISION</h1>
+            <p>“To become a market leader in health care IT industry by being a one stop solution provider for all the healthcare related needs and problems related to software and support systems”.</p>
+        </div>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8" style="margin-top:60px">
+            <h1>MISSION</h1>
+            <p>
+                1)"Creating a common platform for both patients and doctors so as to reach each other without difficulty".<br>
+                
+                2)"Creating quality products and services thereby making the users dependent on our products".<br> 
+                
+                3)"Making out quality the most sought out attribute by health care providers".<br>
+                
+                4)"Creating easy accessibility for the patient to reach doctor and vice-versa and make an user friendly and convenient appointment system".<br>
+                
+                5)"Creating an eco-friendly paperless health care system".
+            </p>
+        </div>
+        <div class="col-lg-4">
+            <img src="images/mission.jpg" alt="Mission">
+        </div>
+    </div>
+</div>
+
+
+<!-- divider line -->
+<!-- <br><div class="container">
+    <div class="row">
+        <div class="col">
+            <hr class="line">
+        </div>
+    </div>
+</div> -->
+<!-- divider line end -->
+
+
+
+
+<!-- copyright area -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+
+
+<!-- partial:index.partial.html -->
+<footer id="footer" class="d-flex-column text-center">
+  <hr class="mt-0">
+  <!--Social buttons-->
+  <h3>You can visit us at</h3>
+  <div class="rounded-social-buttons">
+    <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+</div>
+  </div>
+  <!--/.Social buttons-->
+  <hr class="mb-0">
+  <!--Footer Links-->
+  <div class="container text-left text-md-center">
+    <div class="row">
+      <!--First column-->
+      <div class="col-md-3 mx-auto shfooter">
+        <h5 class="my-2 d-none d-md-block" style="font-family: Gilroy;">Contact Details</h5>
+        <div class="d-md-none title" data-target="#Product" data-toggle="collapse">
+          <div class="mt-3" style="font-family: Gilroy;">Contact Details
+            <div class="float-right navbar-toggler">
+              <i class="fas fa-angle-down"></i>
+              <i class="fas fa-angle-up"></i>
+            </div>
+          </div>
+        </div>
+        <ul class="list-unstyled collapse" id="Product">
+          Shya Tech Labs Private Limited | CIN:U72900TN2019PTC131548 
+             Mobile:+916385715188 Landline : +1(617)2755969 
+        </ul>
+      </div>
+      <!--/.First column-->
+      <hr class="clearfix w-100 d-md-none mb-0">
+      <!--Second column-->
+      <div class="col-md-3 mx-auto shfooter">
+        <h5 class="my-2  d-none d-md-block" style="font-family: Gilroy;">Quick Links</h5>
+        <div class="d-md-none title" data-target="#Company" data-toggle="collapse">
+          <div class="mt-3 "style="font-family: Gilroy;">Quick Links
+            <div class="float-right navbar-toggler">
+              <i class="fas fa-angle-down"></i>
+              <i class="fas fa-angle-up"></i>
+            </div>
+          </div>
+        </div>
+        <ul class="list-unstyled collapse" id="Company">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="work.html">Work with us</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </div>
+      <!--/.Second column-->
+      <hr class="clearfix w-100 d-md-none mb-0">
+      <!--Third column-->
+      <div class="col-md-3 mx-auto shfooter">
+        <h5 class="my-2 d-none d-md-block" style="font-family: Gilroy;">Corporate Office</h5>
+        <div class="d-md-none title" data-target="#Resources" data-toggle="collapse">
+          <div class="mt-3" style="font-family: Gilroy;">Corporate Office
+            <div class="float-right navbar-toggler">
+              <i class="fas fa-angle-down"></i>
+              <i class="fas fa-angle-up"></i>
+            </div>
+          </div>
+        </div>
+        <ul class="list-unstyled collapse" id="Resources">
+          First International Finance Centre, Level 7, Plot Nos C-54 &C-55,
+              G Block, Bandra Kurla Complex,
+              Bandra East, Mumbai-400051, Maharastra, India
+              +91-9821080456
+              contact@shyatechlabs.com
+        </ul>
+      </div>
+      <!--/.Third column-->
+      <hr class="clearfix w-100 d-md-none mb-0">
+      <!--Fourth column-->
+      <div class="col-md-3 mx-auto shfooter">
+        <h5 class="my-2 d-none d-md-block" style="font-family: Gilroy;">Registered office</h5>
+        <div class="d-md-none title" data-target="#Get-Help" data-toggle="collapse">
+          <div class="mt-3 " style="font-family: Gilroy;">Registered office
+            <div class="float-right navbar-toggler">
+              <i class="fas fa-angle-down"></i>
+              <i class="fas fa-angle-up"></i>
+            </div>
+          </div>
+        </div>
+        <ul class="list-unstyled collapse" id="Get-Help">
+          1st Floor, Jessly Eye Clinic,
+          No 1, Poonthottam Pattai
+          Villupuram- 605 602,
+          Tamil Nadu, India.
+          +91-9821080456
+          contact@shyatechlabs.com
+
+        </ul>
+      </div>
+      <!--/.Fourth column-->
+    </div>
+  </div>
+  <!--/.Footer Links-->
+  <hr class="mb-0">
+  <!--Copyright-->
+  <div class="py-3 text-center">
+    Copyright 
+    <script>
+      document.write(new Date().getFullYear())
+    </script> | Shya Tech Lab. All Rights Reserved | Designed by Sakshi Parikh
+  </div>
+  <!--/.Copyright-->
+</footer>
+  <!-- <h5 class="resize"><i class="fas fa-angle-double-left"></i>Resize screen<i class="fas fa-angle-double-right"></i> -->
+  <!-- partial -->
+<!-- copyright area ends -->
+
+
+<!-- JS files -->
+<script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+    <script>
+      $(window).scroll(function () {
+          var sticky = $('.mobile-menu'),
+              scroll = $(window).scrollTop();
+
+          if (scroll >= 40) {
+              sticky.addClass('fixed');
+          }
+          else {
+              sticky.removeClass('fixed');
+
+          }
+      });
+  </script>
+    
+<script>
+$(document).ready(function() {
+
+    $('[data-toggle="popover"]').popover();
+});
+</script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
+
